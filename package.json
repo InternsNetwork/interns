@@ -1,0 +1,9 @@
+{
+  "name": "interns",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:fvj/interns.git",
+  "author": "Julius von Froreich (jvf) <jvf@3yourmind.com>",
+  "license": "MIT",
+  "private": true
+}
