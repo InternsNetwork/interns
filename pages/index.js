@@ -45,10 +45,6 @@ class InternTable extends React.Component {
     this.setState({ loaded: true, internships: entries });
   }
 
-  componentDidUpdate() {
-    console.log(this.state);
-  }
-
   render() {
     if (!this.state.loaded) return <p>Loading...</p>;
     if (this.state.internships.length == 0) return <p>No entries!</p>;
