@@ -1,19 +1,35 @@
 {
-  "name": "interns",
-  "version": "0.0.1",
-  "main": "index.js",
-  "repository": "git@github.com:fvj/interns.git",
   "author": "Julius von Froreich (jvf) <jvf@3yourmind.com>",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
   "dependencies": {
     "next": "^7.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
-  }
+  },
+  "devDependencies": {
+    "husky": "^1.1.0",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "index.js",
+  "name": "interns",
+  "private": true,
+  "repository": "git@github.com:fvj/interns.git",
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "start": "next start"
+  },
+  "version": "0.0.1"
 }
