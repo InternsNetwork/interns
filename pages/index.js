@@ -1,13 +1,20 @@
+import 'glamor/reset';
 import styled from 'styled-components';
 
-import { COLORS } from '../util/colors';
+const Wrapper = styled.div`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+`;
 
-const Button = styled.button`
-  background-color: ${COLORS.SECONDARY};
+const Content = styled.main`
+  flex: 1;
 `;
 
 export default () => (
-  <div>
-    <Button>Hello World.</Button>
-  </div>
+  <Wrapper>
+    <header>…</header>
+    <Content>...dwa</Content>
+    <footer>…</footer>
+  </Wrapper>
 );
