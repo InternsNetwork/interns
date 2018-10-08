@@ -91,6 +91,7 @@ const Header = styled.header`
   flex-direction: row;
   justify-content: space-between;
   min-width: 100%;
+  align-items: center;
 
   @media (min-width: 1000px) {
     min-width: 1000px;
@@ -100,15 +101,30 @@ const Header = styled.header`
 const Menu = styled.div`
   display: flex;
   flex-direction: row;
+  padding-top: 2em;
+  padding-bottom: 2em;
+`;
+
+const MenuItem = styled.div`
+  font-weight: 600;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+`;
+
+const Logo = styled.img`
+  width: 100px;
+  filter: grayscale(100%);
 `;
 
 export default () => (
   <Wrapper>
     <Header>
-      <div>interns</div>
+      <Logo src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
       <Menu>
-        <div>Companies</div>
-        <div>About</div>
+        <MenuItem>Companies</MenuItem>
+        <MenuItem>About</MenuItem>
       </Menu>
     </Header>
     <Content>
