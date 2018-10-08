@@ -111,8 +111,9 @@ export default () => (
         <div>About</div>
       </Menu>
     </Header>
-    <Content>Our cool internships</Content>
-    <InternTable />
+    <Content>
+      <InternTable />
+    </Content>
     <footer>…</footer>
   </Wrapper>
 );
