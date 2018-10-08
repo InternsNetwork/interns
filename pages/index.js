@@ -1,6 +1,7 @@
 import 'glamor/reset';
 import styled from 'styled-components';
 import React from 'react';
+import { COLORS } from '../util/colors';
 import { InternTable } from '../components/InternTable';
 
 const Wrapper = styled.div`
@@ -14,15 +15,15 @@ const Wrapper = styled.div`
 
 const Content = styled.main`
   flex: 1;
-  max-width: 1000px;
   min-width: 100%;
   align-self: center;
   box-sizing: border-box;
-
-  @media (min-width: 1000px) {
-    min-width: 1000px;
-  }
 `;
+
+// max-width: 1000px;
+//   @media (min-width: 1000px) {
+//     min-width: 1000px;
+//   }
 
 const Header = styled.header`
   max-width: 1000px;
@@ -58,6 +59,38 @@ const Logo = styled.img`
   filter: grayscale(100%);
 `;
 
+const Divider = styled.div`
+  border-top: 1px solid ${COLORS.PRIMARY};
+  width: 100%;
+  margin-top: 1.3em;
+`;
+
+const SearchInputContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const SearchInput = styled.input`
+  border: 0;
+  border-bottom: 1px solid rgb(0, 23, 31, 0.39);
+  padding-left: 0.61em;
+  padding-right: 0.61em;
+  padding-bottom: 0.4em;
+  font-size: 1.2em;
+  color: ${COLORS.PRIMARY};
+  outline-style: none;
+  box-shadow: none;
+  transition: all 0.36s;
+
+  &::placeholder {
+    color: rgb(0, 23, 31, 0.39);
+  }
+
+  &:focus {
+    border-bottom: 1px solid ${COLORS.PRIMARY};
+  }
+`;
+
 export default () => (
   <Wrapper>
     <Header>
@@ -68,7 +101,13 @@ export default () => (
       </Menu>
     </Header>
     <Content>
-      <InternTable />
+      <div>
+        <SearchInputContainer>
+          <SearchInput placeholder="Company..." />
+        </SearchInputContainer>
+        <Divider />
+      </div>
+      {/* <InternTable /> */}
     </Content>
     <footer>…</footer>
   </Wrapper>
