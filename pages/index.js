@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import React from 'react';
 import { COLORS } from '../util/colors';
 import { InternTable } from '../components/InternTable';
+import { ChevronDown } from '../components/ChevronDown';
 
 const Wrapper = styled.div`
   display: flex;
@@ -19,11 +20,6 @@ const Content = styled.main`
   align-self: center;
   box-sizing: border-box;
 `;
-
-// max-width: 1000px;
-//   @media (min-width: 1000px) {
-//     min-width: 1000px;
-//   }
 
 const Header = styled.header`
   max-width: 1000px;
@@ -91,6 +87,47 @@ const SearchInput = styled.input`
   }
 `;
 
+const DropdownFilterWrapper = styled.div`
+  display: flex;
+`;
+
+const ContentWithMargins = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1000px;
+  @media (min-width: 1000px) {
+    min-width: 1000px;
+  }
+`;
+
+const DropdownFilter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0.7em;
+  cursor: pointer;
+
+  > span {
+    transition: all ${0.61 * 0.36}s;
+    padding-right: 0.15em;
+    color: rgb(0, 23, 31, 0.39);
+  }
+
+  &:hover > span {
+    color: rgb(0, 23, 31, 1);
+  }
+
+  > svg {
+    transition: all ${0.61 * 0.36}s;
+    stroke-width: 0.8;
+  }
+
+  &:hover > svg {
+    stroke-width: 1.2;
+  }
+`;
+
 export default () => (
   <Wrapper>
     <Header>
@@ -107,6 +144,14 @@ export default () => (
         </SearchInputContainer>
         <Divider />
       </div>
+      <ContentWithMargins>
+        <DropdownFilterWrapper>
+          <DropdownFilter>
+            <span>Sort By</span>
+            <ChevronDown size={16} />
+          </DropdownFilter>
+        </DropdownFilterWrapper>
+      </ContentWithMargins>
       {/* <InternTable /> */}
     </Content>
     <footer>…</footer>
