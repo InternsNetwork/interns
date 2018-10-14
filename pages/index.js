@@ -4,6 +4,7 @@ import React from 'react';
 import { COLORS } from '../util/colors';
 import { InternTable } from '../components/InternTable';
 import { ChevronDown } from '../components/ChevronDown';
+import { ChevronUp } from '../components/ChevronUp';
 import Triangle from '../components/Triangle';
 
 const Wrapper = styled.div`
@@ -235,88 +236,111 @@ const CompanyPositionLink = styled.a`
   text-decoration: none;
 `;
 
-export default () => (
-  <Wrapper>
-    <Header>
-      <Logo
-        src={
-          'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
-        }
-      />
-      <Menu>
-        <MenuItem>Companies</MenuItem>
-        <MenuItem>About</MenuItem>
-      </Menu>
-    </Header>
-    <Content>
-      <div>
-        <SearchInputContainer>
-          <SearchInput placeholder="Company..." />
-        </SearchInputContainer>
-        <Divider />
-      </div>
-      <ContentWithMargins>
-        <DropdownFilterWrapper>
-          <DropdownFilter>
-            <span>Sort By</span>
-            <ChevronDown size={16} />
-            <DropdownItemContent>
-              <Triangle size={8} />
-              <DropdownItemsWrapper>
-                <DropdownItemWrapper>
-                  <span>Location</span>
-                </DropdownItemWrapper>
-                <DropdownItemWrapper>
-                  <span>Recently Updated</span>
-                </DropdownItemWrapper>
-              </DropdownItemsWrapper>
-            </DropdownItemContent>
-          </DropdownFilter>
-        </DropdownFilterWrapper>
-      </ContentWithMargins>
-      <ContentWithMargins>
-        <Divider color="rgb(0,23,31,0.1)" marginTop="0" />
-        <CompanyItemWrapper>
-          <CompanyItemWrapperUpper>
-            <CompanyItemInformationWrapper>
-              <CompanyInfoName>3YOURMIND</CompanyInfoName>
-              <CompanyInfoLocation>Germany, Berlin</CompanyInfoLocation>
-            </CompanyItemInformationWrapper>
-            <CompanyItemPositionsInfoWrapper>
-              <span>3 Positions</span>
-            </CompanyItemPositionsInfoWrapper>
-          </CompanyItemWrapperUpper>
-          <CompanyItemWrapperLower>
-            <CompanyPositionsList>
-              <CompanyPositionsListItem>
-                <CompanyPositionLink
-                  href="https://www.google.com/"
-                  target="_blank"
-                >
-                  Apply as Software Engineering Intern ↗
-                </CompanyPositionLink>
-              </CompanyPositionsListItem>
-              <CompanyPositionsListItem>
-                <CompanyPositionLink
-                  href="https://www.google.com/"
-                  target="_blank"
-                >
-                  Apply as Marketing Intern ↗
-                </CompanyPositionLink>
-              </CompanyPositionsListItem>
-            </CompanyPositionsList>
-          </CompanyItemWrapperLower>
-          <CompanyItemWrapperLower>
-            <ChevronDown size={16} />
-            <span>Show Positions</span>
-          </CompanyItemWrapperLower>
-        </CompanyItemWrapper>
-        <div />
-        <div />
-        <div />
-      </ContentWithMargins>
-      {/* <InternTable /> */}
-    </Content>
-    <footer>…</footer>
-  </Wrapper>
-);
+export class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { showPosition: false };
+  }
+
+  onShowHideInformationClick = () => {
+    this.setState({
+      showPosition: !this.state.showPosition,
+    });
+  };
+
+  render() {
+    return (
+      <Wrapper>
+        <Header>
+          <Logo
+            src={
+              'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
+            }
+          />
+          <Menu>
+            <MenuItem>Companies</MenuItem>
+            <MenuItem>About</MenuItem>
+          </Menu>
+        </Header>
+        <Content>
+          <div>
+            <SearchInputContainer>
+              <SearchInput placeholder="Company..." />
+            </SearchInputContainer>
+            <Divider />
+          </div>
+          <ContentWithMargins>
+            <DropdownFilterWrapper>
+              <DropdownFilter>
+                <span>Sort By</span>
+                <ChevronDown size={16} />
+                <DropdownItemContent>
+                  <Triangle size={8} />
+                  <DropdownItemsWrapper>
+                    <DropdownItemWrapper>
+                      <span>Location</span>
+                    </DropdownItemWrapper>
+                    <DropdownItemWrapper>
+                      <span>Recently Updated</span>
+                    </DropdownItemWrapper>
+                  </DropdownItemsWrapper>
+                </DropdownItemContent>
+              </DropdownFilter>
+            </DropdownFilterWrapper>
+          </ContentWithMargins>
+          <ContentWithMargins>
+            <Divider color="rgb(0,23,31,0.1)" marginTop="0" />
+            <CompanyItemWrapper>
+              <CompanyItemWrapperUpper>
+                <CompanyItemInformationWrapper>
+                  <CompanyInfoName>3YOURMIND</CompanyInfoName>
+                  <CompanyInfoLocation>Germany, Berlin</CompanyInfoLocation>
+                </CompanyItemInformationWrapper>
+                <CompanyItemPositionsInfoWrapper>
+                  <span>3 Positions</span>
+                </CompanyItemPositionsInfoWrapper>
+              </CompanyItemWrapperUpper>
+              {this.state.showPosition && (
+                <CompanyItemWrapperLower>
+                  <CompanyPositionsList>
+                    <CompanyPositionsListItem>
+                      <CompanyPositionLink
+                        href="https://www.google.com/"
+                        target="_blank"
+                      >
+                        Apply as Software Engineering Intern ↗
+                      </CompanyPositionLink>
+                    </CompanyPositionsListItem>
+                    <CompanyPositionsListItem>
+                      <CompanyPositionLink
+                        href="https://www.google.com/"
+                        target="_blank"
+                      >
+                        Apply as Marketing Intern ↗
+                      </CompanyPositionLink>
+                    </CompanyPositionsListItem>
+                  </CompanyPositionsList>
+                </CompanyItemWrapperLower>
+              )}
+              <CompanyItemWrapperLower
+                onClick={this.onShowHideInformationClick}
+              >
+                {!this.state.showPosition && <ChevronDown size={16} />}
+                {!this.state.showPosition && <span>Show More</span>}
+                {this.state.showPosition && <ChevronUp size={16} />}
+                {this.state.showPosition && <span>Show Less</span>}
+              </CompanyItemWrapperLower>
+            </CompanyItemWrapper>
+            <div />
+            <div />
+            <div />
+          </ContentWithMargins>
+          {/* <InternTable /> */}
+        </Content>
+        <footer>…</footer>
+      </Wrapper>
+    );
+  }
+}
+
+export default Index;
