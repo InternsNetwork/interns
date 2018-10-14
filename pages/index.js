@@ -107,9 +107,13 @@ const DropdownItemContent = styled.div`
   flex-direction: column;
   position: absolute;
   bottom: 0;
-  transform: translateY(calc(100% - 0.3em));
+  transform: ;
   border-radius: 2px;
   visibility: hidden;
+  transform: rotateX(20deg) translateY(85px);
+  opacity: 0;
+  transition: all 0.3s ease, opacity 0.5s ease, transform 0.2s ease;
+  border-radius: 2px;
 `;
 
 const DropdownFilter = styled.div`
@@ -141,6 +145,8 @@ const DropdownFilter = styled.div`
 
   &:hover > ${DropdownItemContent} {
     visibility: visible;
+    opacity: 1;
+    transform: rotateX(0deg) translateY(calc(100% - 0.3em));
   }
 `;
 
@@ -150,6 +156,7 @@ const DropdownItemsWrapper = styled.div`
   padding: 1.1em 1em;
   padding-bottom: 1.3em;
   box-shadow: 0px 2px 20px -0px rgba(0, 0, 0, 0.161);
+  border-radius: 3px;
 `;
 
 const DropdownItemWrapper = styled.div`
