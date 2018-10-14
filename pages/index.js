@@ -110,7 +110,7 @@ const DropdownItemContent = styled.div`
   transform: ;
   border-radius: 2px;
   visibility: hidden;
-  transform: rotateX(20deg) translateY(85px);
+  transform: rotateX(20deg) translateY(100%);
   opacity: 0;
   transition: all 0.3s ease, opacity 0.5s ease, transform 0.2s ease;
   border-radius: 2px;
