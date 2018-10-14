@@ -4,6 +4,7 @@ import React from 'react';
 import { COLORS } from '../util/colors';
 import { InternTable } from '../components/InternTable';
 import { ChevronDown } from '../components/ChevronDown';
+import Triangle from '../components/Triangle';
 
 const Wrapper = styled.div`
   display: flex;
@@ -101,12 +102,23 @@ const ContentWithMargins = styled.div`
   }
 `;
 
+const DropdownItemContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(calc(100% - 0.3em));
+  border-radius: 2px;
+  visibility: hidden;
+`;
+
 const DropdownFilter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1em 0.7em;
   cursor: pointer;
+  position: relative;
 
   > span {
     transition: all ${0.61 * 0.36}s;
@@ -126,12 +138,42 @@ const DropdownFilter = styled.div`
   &:hover > svg {
     stroke-width: 1.2;
   }
+
+  &:hover > ${DropdownItemContent} {
+    visibility: visible;
+  }
+`;
+
+const DropdownItemsWrapper = styled.div`
+  background-color: white;
+  min-width: 120px;
+  padding: 1.1em 1em;
+  padding-bottom: 1.3em;
+  box-shadow: 0px 2px 20px -0px rgba(0, 0, 0, 0.161);
+`;
+
+const DropdownItemWrapper = styled.div`
+  color: rgb(0, 23, 31, 0.39);
+  padding-bottom: 0.61em;
+  font-size: 0.9em;
+
+  :last-child {
+    padding-bottom: 0em;
+  }
+
+  &:hover > span {
+    color: rgb(0, 23, 31, 1);
+  }
 `;
 
 export default () => (
   <Wrapper>
     <Header>
-      <Logo src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+      <Logo
+        src={
+          'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
+        }
+      />
       <Menu>
         <MenuItem>Companies</MenuItem>
         <MenuItem>About</MenuItem>
@@ -149,6 +191,17 @@ export default () => (
           <DropdownFilter>
             <span>Sort By</span>
             <ChevronDown size={16} />
+            <DropdownItemContent>
+              <Triangle size={8} />
+              <DropdownItemsWrapper>
+                <DropdownItemWrapper>
+                  <span>Location</span>
+                </DropdownItemWrapper>
+                <DropdownItemWrapper>
+                  <span>Recently Updated</span>
+                </DropdownItemWrapper>
+              </DropdownItemsWrapper>
+            </DropdownItemContent>
           </DropdownFilter>
         </DropdownFilterWrapper>
       </ContentWithMargins>

@@ -8,6 +8,7 @@
     "styled-components": "^3.4.9"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.8.0",
     "husky": "^1.1.0",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3"
@@ -31,6 +32,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
+    "export": "npm run build && next export",
     "start": "next start"
   },
   "version": "0.0.1"
