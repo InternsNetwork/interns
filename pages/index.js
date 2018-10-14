@@ -45,7 +45,8 @@ const Menu = styled.div`
 `;
 
 const MenuItem = styled.div`
-  font-weight: 600;
+  font-weight: ${props => (props.active ? '600' : '300')};
+  cursor: ${props => (props.active ? 'default' : 'pointer')};
 
   &:not(:last-child) {
     margin-right: 10px;
@@ -113,7 +114,7 @@ const DropdownItemContent = styled.div`
   visibility: hidden;
   transform: rotateX(20deg) translateY(100%);
   opacity: 0;
-  transition: all 0.3s ease, opacity 0.5s ease, transform 0.2s ease;
+  transition: all 0.3s ease, opacity 0.3s ease, transform 0.2s ease;
   border-radius: 2px;
 `;
 
@@ -236,6 +237,10 @@ const CompanyPositionLink = styled.a`
   text-decoration: none;
 `;
 
+const CompanyShowPositionsWrapper = styled.div`
+  cursor: pointer;
+`;
+
 export class Index extends React.Component {
   constructor(props) {
     super(props);
@@ -258,7 +263,7 @@ export class Index extends React.Component {
             }
           />
           <Menu>
-            <MenuItem>Companies</MenuItem>
+            <MenuItem active>Companies</MenuItem>
             <MenuItem>About</MenuItem>
           </Menu>
         </Header>
@@ -325,15 +330,14 @@ export class Index extends React.Component {
               <CompanyItemWrapperLower
                 onClick={this.onShowHideInformationClick}
               >
-                {!this.state.showPosition && <ChevronDown size={16} />}
-                {!this.state.showPosition && <span>Show More</span>}
-                {this.state.showPosition && <ChevronUp size={16} />}
-                {this.state.showPosition && <span>Show Less</span>}
+                <CompanyShowPositionsWrapper>
+                  {!this.state.showPosition && <ChevronDown size={16} />}
+                  {!this.state.showPosition && <span>Show More</span>}
+                  {this.state.showPosition && <ChevronUp size={16} />}
+                  {this.state.showPosition && <span>Show Less</span>}
+                </CompanyShowPositionsWrapper>
               </CompanyItemWrapperLower>
             </CompanyItemWrapper>
-            <div />
-            <div />
-            <div />
           </ContentWithMargins>
           {/* <InternTable /> */}
         </Content>
