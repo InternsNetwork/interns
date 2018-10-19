@@ -5,6 +5,7 @@ import { COLORS } from '../util/colors';
 import { ChevronDown } from '../components/ChevronDown';
 import Triangle from '../components/Triangle';
 import { CompanyItemWrapper } from '../components/CompanyItemWrapper';
+import { InternTable } from '../components/InternTable';
 
 const Wrapper = styled.div`
   display: flex;
@@ -228,7 +229,7 @@ export class Index extends React.Component {
           </ContentWithMargins>
           <ContentWithMargins>
             <Divider color="rgb(0,23,31,0.1)" marginTop="0" />
-            <CompanyItemWrapper
+            {/* <CompanyItemWrapper
               companyName="3YOURMIND"
               country="Germany"
               city="Berlin"
@@ -248,7 +249,8 @@ export class Index extends React.Component {
               country="Germany"
               city="Berlin"
               positions={[]}
-            />
+            /> */}
+            <InternTable />
           </ContentWithMargins>
           {/* <InternTable /> */}
         </Content>
