@@ -92,7 +92,10 @@ export class CompanyItemWrapper extends React.Component {
             </CompanyInfoLocation>
           </CompanyItemInformationWrapper>
           <CompanyItemPositionsInfoWrapper>
-            <span>{this.props.positions.length} Positions</span>
+            <span>
+              {this.props.positions.length}{' '}
+              {this.props.positions.length === 1 ? 'Position' : 'Positions'}
+            </span>
           </CompanyItemPositionsInfoWrapper>
         </CompanyItemWrapperUpper>
         {this.state.showPosition && (
