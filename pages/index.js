@@ -2,10 +2,9 @@ import 'glamor/reset';
 import styled from 'styled-components';
 import React from 'react';
 import { COLORS } from '../util/colors';
-import { InternTable } from '../components/InternTable';
 import { ChevronDown } from '../components/ChevronDown';
-import { ChevronUp } from '../components/ChevronUp';
 import Triangle from '../components/Triangle';
+import { CompanyItemWrapper } from '../components/CompanyItemWrapper';
 
 const Wrapper = styled.div`
   display: flex;
@@ -175,72 +174,6 @@ const DropdownItemWrapper = styled.div`
   }
 `;
 
-const CompanyItemWrapper = styled.div`
-  display: flex;
-  border-bottom: 1px solid rgba(0, 23, 31, 0.02);
-  padding: 1em 1em;
-  flex-direction: column;
-  background-color: rgba(0, 23, 31, 0.02);
-`;
-
-const CompanyItemWrapperUpper = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const CompanyItemWrapperLower = styled.div`
-  display: flex;
-  padding-top: 0.3em;
-  justify-content: center;
-`;
-
-const CompanyItemInformationWrapper = styled.div`
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-`;
-
-const CompanyItemPositionsInfoWrapper = styled.div`
-  display: flex;
-  align-self: center;
-  justify-content: center;
-`;
-
-const CompanyInfoName = styled.h2`
-  font-size: 1.1em;
-  padding: 0;
-  margin: 0;
-  font-weight: 400;
-  margin-bottom: 0.3em;
-`;
-
-const CompanyInfoLocation = styled.span`
-  font-weight: 300;
-`;
-
-const CompanyPositionsList = styled.ul`
-  margin: 0;
-  padding: 0;
-  padding: 1em 0;
-`;
-
-const CompanyPositionsListItem = styled.li`
-  list-style: none;
-  margin-bottom: 0.5em;
-  :last-child {
-    margin-bottom: 0em;
-  }
-`;
-
-const CompanyPositionLink = styled.a`
-  color: #007ea7;
-  text-decoration: none;
-`;
-
-const CompanyShowPositionsWrapper = styled.div`
-  cursor: pointer;
-`;
-
 export class Index extends React.Component {
   constructor(props) {
     super(props);
@@ -295,49 +228,27 @@ export class Index extends React.Component {
           </ContentWithMargins>
           <ContentWithMargins>
             <Divider color="rgb(0,23,31,0.1)" marginTop="0" />
-            <CompanyItemWrapper>
-              <CompanyItemWrapperUpper>
-                <CompanyItemInformationWrapper>
-                  <CompanyInfoName>3YOURMIND</CompanyInfoName>
-                  <CompanyInfoLocation>Germany, Berlin</CompanyInfoLocation>
-                </CompanyItemInformationWrapper>
-                <CompanyItemPositionsInfoWrapper>
-                  <span>3 Positions</span>
-                </CompanyItemPositionsInfoWrapper>
-              </CompanyItemWrapperUpper>
-              {this.state.showPosition && (
-                <CompanyItemWrapperLower>
-                  <CompanyPositionsList>
-                    <CompanyPositionsListItem>
-                      <CompanyPositionLink
-                        href="https://www.google.com/"
-                        target="_blank"
-                      >
-                        Apply as Software Engineering Intern ↗
-                      </CompanyPositionLink>
-                    </CompanyPositionsListItem>
-                    <CompanyPositionsListItem>
-                      <CompanyPositionLink
-                        href="https://www.google.com/"
-                        target="_blank"
-                      >
-                        Apply as Marketing Intern ↗
-                      </CompanyPositionLink>
-                    </CompanyPositionsListItem>
-                  </CompanyPositionsList>
-                </CompanyItemWrapperLower>
-              )}
-              <CompanyItemWrapperLower
-                onClick={this.onShowHideInformationClick}
-              >
-                <CompanyShowPositionsWrapper>
-                  {!this.state.showPosition && <ChevronDown size={16} />}
-                  {!this.state.showPosition && <span>Show More</span>}
-                  {this.state.showPosition && <ChevronUp size={16} />}
-                  {this.state.showPosition && <span>Show Less</span>}
-                </CompanyShowPositionsWrapper>
-              </CompanyItemWrapperLower>
-            </CompanyItemWrapper>
+            <CompanyItemWrapper
+              companyName="3YOURMIND"
+              country="Germany"
+              city="Berlin"
+              positions={[
+                {
+                  url: 'https://www.3yourmind.com/career/vue-frontend-engineer',
+                  title: 'Frontend Engineering Intern',
+                },
+                {
+                  url: 'https://www.3yourmind.com/career/django-engineer',
+                  title: 'Backend Engineering Intern',
+                },
+              ]}
+            />
+            <CompanyItemWrapper
+              companyName="3YOURMIND"
+              country="Germany"
+              city="Berlin"
+              positions={[]}
+            />
           </ContentWithMargins>
           {/* <InternTable /> */}
         </Content>
