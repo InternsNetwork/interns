@@ -6,6 +6,7 @@ import { ChevronDown } from '../components/ChevronDown';
 import Triangle from '../components/Triangle';
 import { CompanyItemWrapper } from '../components/CompanyItemWrapper';
 import { InternTable } from '../components/InternTable';
+import { Logo } from '../components/Logo';
 
 const Wrapper = styled.div`
   display: flex;
@@ -51,11 +52,6 @@ const MenuItem = styled.div`
   &:not(:last-child) {
     margin-right: 10px;
   }
-`;
-
-const Logo = styled.img`
-  width: 100px;
-  filter: grayscale(100%);
 `;
 
 const Divider = styled.div`
@@ -191,11 +187,7 @@ export class Index extends React.Component {
     return (
       <Wrapper>
         <Header>
-          <Logo
-            src={
-              'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
-            }
-          />
+          <Logo />
           <Menu>
             <MenuItem active>Companies</MenuItem>
             <MenuItem>About</MenuItem>
@@ -217,9 +209,6 @@ export class Index extends React.Component {
                   <Triangle size={8} />
                   <DropdownItemsWrapper>
                     <DropdownItemWrapper>
-                      <span>Location</span>
-                    </DropdownItemWrapper>
-                    <DropdownItemWrapper>
                       <span>Recently Updated</span>
                     </DropdownItemWrapper>
                   </DropdownItemsWrapper>
@@ -229,27 +218,6 @@ export class Index extends React.Component {
           </ContentWithMargins>
           <ContentWithMargins>
             <Divider color="rgb(0,23,31,0.1)" marginTop="0" />
-            {/* <CompanyItemWrapper
-              companyName="3YOURMIND"
-              country="Germany"
-              city="Berlin"
-              positions={[
-                {
-                  url: 'https://www.3yourmind.com/career/vue-frontend-engineer',
-                  title: 'Frontend Engineering Intern',
-                },
-                {
-                  url: 'https://www.3yourmind.com/career/django-engineer',
-                  title: 'Backend Engineering Intern',
-                },
-              ]}
-            />
-            <CompanyItemWrapper
-              companyName="3YOURMIND"
-              country="Germany"
-              city="Berlin"
-              positions={[]}
-            /> */}
             <InternTable />
           </ContentWithMargins>
           {/* <InternTable /> */}
