@@ -33,6 +33,10 @@ export class InternTable extends React.Component {
       );
     }
 
+    _internships = _internships.sort(
+      internship => new Date(internship.updatedAt),
+    );
+
     const result = lodash.groupBy(
       _internships,
       internship =>
