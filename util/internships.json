@@ -1,35 +1,5 @@
 [
   {
-    "id": "cokwr",
-    "title": "Frontend Engineering Intern",
-    "department": "Engineering",
-    "company": "3YOURMIND",
-    "city": "Berlin",
-    "country": "Germany",
-    "url": "https://3yourmind.com",
-    "updatedAt": "2018-10-11T17:46:02.549Z"
-  },
-  {
-    "id": "4i29f",
-    "title": "Marketing Intern",
-    "department": "Marketing",
-    "company": "3YOURMIND",
-    "city": "Berlin",
-    "country": "Germany",
-    "url": "https://3yourmind.com",
-    "updatedAt": "2018-10-15T17:46:02.549Z"
-  },
-  {
-    "id": "wwad3",
-    "title": "Frontend Engineering Intern",
-    "department": "Engineering",
-    "company": "Uber",
-    "city": "Dublin",
-    "country": "Ireland",
-    "url": "https://uber.com",
-    "updatedAt": "2018-10-11T17:46:02.549Z"
-  },
-  {
     "id": "wdawda",
     "title": "Software Engineering Intern",
     "department": "Engineering",

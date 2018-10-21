@@ -93,9 +93,13 @@ export const About = props => {
           <h2>Contact</h2>
           <p>You can contact us by emailing: </p>
           <h2>FAQ</h2>
-          <p>How do you make money?</p>
+          <p>
+            <i>How do you make money?</i>
+          </p>
           <p>We do not right now. We will think about monetization later.</p>
-          <p>How can I list my company here?</p>
+          <p>
+            <i>How can I list my company here?</i>
+          </p>
           <p>
             This project will be Open Source at some point so everyone can
             contribute companies to it.
