@@ -35,11 +35,6 @@ export const Footer = () => (
         <div>
           <CopyrightNotice>Copyright © 2018 InternsNetwork</CopyrightNotice>
         </div>
-        <div>
-          <Link href="/imprint">
-            <ImprintLink>Imprint</ImprintLink>
-          </Link>
-        </div>
       </FooterContent>
     </ContentWithMargins>
   </footer>
