@@ -16,6 +16,7 @@ const FooterContent = styled.div`
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+  padding-top: 1em;
 `;
 
 const ImprintLink = styled.a`
