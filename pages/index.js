@@ -1,6 +1,7 @@
 import 'glamor/reset';
 import styled from 'styled-components';
 import React from 'react';
+import Link from 'next/link';
 import { COLORS } from '../util/colors';
 import { ChevronDown } from '../components/ChevronDown';
 import Triangle from '../components/Triangle';
@@ -44,7 +45,7 @@ const Menu = styled.div`
   padding-bottom: 2em;
 `;
 
-const MenuItem = styled.div`
+const MenuItem = styled.a`
   font-weight: ${props => (props.active ? '600' : '300')};
   cursor: ${props => (props.active ? 'default' : 'pointer')};
 
@@ -186,10 +187,18 @@ export class Index extends React.Component {
     return (
       <Wrapper>
         <Header>
-          <Logo />
+          <Link href="/">
+            <a>
+              <Logo />
+            </a>
+          </Link>
           <Menu>
-            <MenuItem active>Companies</MenuItem>
-            <MenuItem>About</MenuItem>
+            <Link href="/">
+              <MenuItem active>Companies</MenuItem>
+            </Link>
+            <Link href="/about">
+              <MenuItem>About</MenuItem>
+            </Link>
           </Menu>
         </Header>
         <Content>
@@ -223,7 +232,6 @@ export class Index extends React.Component {
             <Divider color="rgb(0,23,31,0.1)" marginTop="0" />
             <InternTable searchText={this.state.searchText} />
           </ContentWithMargins>
-          {/* <InternTable /> */}
         </Content>
         <footer>…</footer>
       </Wrapper>

@@ -55,7 +55,7 @@ export class InternTable extends React.Component {
         updatedAt: '2018-10-15T17:46:02.549Z',
       },
       {
-        id: 'cokwr',
+        id: 'wwad3',
         title: 'Frontend Engineering Intern',
         department: 'Engineering',
         company: 'Uber',
@@ -92,6 +92,7 @@ export class InternTable extends React.Component {
       const positions = result[company];
       return (
         <CompanyItemWrapper
+          key={positions[0].id}
           companyName={positions[0].company}
           country={positions[0].country}
           city={positions[0].city}
