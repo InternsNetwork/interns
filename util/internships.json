@@ -68,5 +68,55 @@
     "country": "United Kingdom",
     "url": "https://jobs.lever.co/palantir/5dd0125b-3eb1-4b3e-8386-fbab7dd5adfb",
     "updatedAt": "2018-10-21"
+  },
+  {
+    "id": "1",
+    "title": "Engineering Intern",
+    "department": "Engineering",
+    "company": "Skyscanner Ltd",
+    "city": "Budapest",
+    "country": "Hungary",
+    "url": "https://www.skyscanner.net/jobs/job/1382514/",
+    "updatedAt": "2018-10-21"
+  },
+  {
+    "id": "2",
+    "title": "Engineering Intern",
+    "department": "Engineering",
+    "company": "Skyscanner Ltd",
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "url": "https://www.skyscanner.net/jobs/job/1382508/",
+    "updatedAt": "2018-10-21"
+  },
+  {
+    "id": "3",
+    "title": "Engineering Intern",
+    "department": "Engineering",
+    "company": "Skyscanner Ltd",
+    "city": "London",
+    "country": "United Kingdom",
+    "url": "https://www.skyscanner.net/jobs/job/1320028/",
+    "updatedAt": "2018-10-21"
+  },
+  {
+    "id": "4",
+    "title": "Engineering Intern",
+    "department": "Engineering",
+    "company": "Skyscanner Ltd",
+    "city": "Edinburgh",
+    "country": "Scotland",
+    "url": "https://www.skyscanner.net/jobs/job/1320018/",
+    "updatedAt": "2018-10-21"
+  },
+  {
+    "id": "5",
+    "title": "Engineering Intern",
+    "department": "Engineering",
+    "company": "Skyscanner Ltd",
+    "city": "Barcelona",
+    "country": "Spain",
+    "url": "https://www.skyscanner.net/jobs/job/1320033/",
+    "updatedAt": "2018-10-21"
   }
 ]
