@@ -80,7 +80,26 @@ export const About = props => {
       </Header>
       <Content>
         <ContentWithMargins>
-          <div>Test</div>
+          <h2>Interns Network</h2>
+          <p>
+            We are Software Engineers with a passion for getting people into
+            this industry.
+          </p>
+          <p>
+            This is quite hard for new programmers or computer science students.
+            Entry jobs are really hard to find and internships are the perfect
+            bridge for getting into the market.
+          </p>
+          <h2>Contact</h2>
+          <p>You can contact us by emailing: </p>
+          <h2>FAQ</h2>
+          <p>How do you make money?</p>
+          <p>We do not right now. We will think about monetization later.</p>
+          <p>How can I list my company here?</p>
+          <p>
+            This project will be Open Source at some point so everyone can
+            contribute companies to it.
+          </p>
         </ContentWithMargins>
       </Content>
       <footer>…</footer>

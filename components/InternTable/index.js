@@ -1,10 +1,9 @@
 import React from 'react';
 import lodash from 'lodash';
 
-import { CompanyItemWrapper } from '../CompanyItemWrapper';
+import internshipsList from '../../util/internships.json';
 
-const SPREADSHEET_URL =
-  'https://spreadsheets.google.com/feeds/list/1SCbvy-6sPIJvafn5KUPSIDDDIFHenEeTMsglLpPCsz4/1/public/values?alt=json';
+import { CompanyItemWrapper } from '../CompanyItemWrapper';
 
 export class InternTable extends React.Component {
   constructor() {
@@ -16,55 +15,7 @@ export class InternTable extends React.Component {
   }
 
   async componentDidMount() {
-    const spreadsheetData = await fetch(SPREADSHEET_URL).then(res =>
-      res.json(),
-    );
-
-    // const entries = spreadsheetData.feed.entry.map(row => {
-    //   const rowURI = row['id']['$t'];
-    //   const id = rowURI.slice(rowURI.lastIndexOf('/') + 1);
-
-    //   return {
-    //     id: id,
-    //     company: row['gsx$company']['$t'],
-    //     location: row['gsx$location']['$t'],
-    //     url: row['gsx$url']['$t'],
-    //     updatedAt: row['updated']['$t'],
-    //   };
-    // });
-
-    const entries = [
-      {
-        id: 'cokwr',
-        title: 'Frontend Engineering Intern',
-        department: 'Engineering',
-        company: '3YOURMIND',
-        city: 'Berlin',
-        country: 'Germany',
-        url: 'https://3yourmind.com',
-        updatedAt: '2018-10-11T17:46:02.549Z',
-      },
-      {
-        id: '4i29f',
-        title: 'Marketing Intern',
-        department: 'Marketing',
-        company: '3YOURMIND',
-        city: 'Berlin',
-        country: 'Germany',
-        url: 'https://3yourmind.com',
-        updatedAt: '2018-10-15T17:46:02.549Z',
-      },
-      {
-        id: 'wwad3',
-        title: 'Frontend Engineering Intern',
-        department: 'Engineering',
-        company: 'Uber',
-        city: 'Dublin',
-        country: 'Ireland',
-        url: 'https://uber.com',
-        updatedAt: '2018-10-11T17:46:02.549Z',
-      },
-    ];
+    const entries = internshipsList;
 
     this.setState({ loaded: true, internships: entries });
   }

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "cokwr",
+    "title": "Frontend Engineering Intern",
+    "department": "Engineering",
+    "company": "3YOURMIND",
+    "city": "Berlin",
+    "country": "Germany",
+    "url": "https://3yourmind.com",
+    "updatedAt": "2018-10-11T17:46:02.549Z"
+  },
+  {
+    "id": "4i29f",
+    "title": "Marketing Intern",
+    "department": "Marketing",
+    "company": "3YOURMIND",
+    "city": "Berlin",
+    "country": "Germany",
+    "url": "https://3yourmind.com",
+    "updatedAt": "2018-10-15T17:46:02.549Z"
+  },
+  {
+    "id": "wwad3",
+    "title": "Frontend Engineering Intern",
+    "department": "Engineering",
+    "company": "Uber",
+    "city": "Dublin",
+    "country": "Ireland",
+    "url": "https://uber.com",
+    "updatedAt": "2018-10-11T17:46:02.549Z"
+  },
+  {
+    "id": "wdawda",
+    "title": "Software Engineering Intern",
+    "department": "Engineering",
+    "company": "Palantir Technologies",
+    "city": "London",
+    "country": "United Kingdom",
+    "url": "https://jobs.lever.co/palantir/95acc82e-fca3-43cd-81c7-15a15ba27a7a",
+    "updatedAt": "2018-10-21"
+  },
+  {
+    "id": "432544775432",
+    "title": "Product Reliability Engineering Intern",
+    "department": "Engineering",
+    "company": "Palantir Technologies",
+    "city": "London",
+    "country": "United Kingdom",
+    "url": "https://jobs.lever.co/palantir/f7616e0a-25af-4089-a302-3a045334b21a",
+    "updatedAt": "2018-10-21"
+  },
+  {
+    "id": "43634745721",
+    "title": "Forward Deployed Software Engineering Intern",
+    "department": "Engineering",
+    "company": "Palantir Technologies",
+    "city": "London",
+    "country": "United Kingdom",
+    "url": "https://jobs.lever.co/palantir/744dc41f-a280-4d7a-817c-11274c2910a1",
+    "updatedAt": "2018-10-21"
+  },
+  {
+    "id": "87473467362",
+    "title": "Privacy and Civil Liberties Software Engineering Intern",
+    "department": "Engineering",
+    "company": "Palantir Technologies",
+    "city": "London",
+    "country": "United Kingdom",
+    "url": "https://jobs.lever.co/palantir/5dd0125b-3eb1-4b3e-8386-fbab7dd5adfb",
+    "updatedAt": "2018-10-21"
+  }
+]
