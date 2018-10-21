@@ -7,6 +7,7 @@ import { ChevronDown } from '../components/ChevronDown';
 import Triangle from '../components/Triangle';
 import { InternTable } from '../components/InternTable';
 import { Logo } from '../components/Logo';
+import { Footer } from '../components/Footer';
 
 const Wrapper = styled.div`
   display: flex;
@@ -233,7 +234,7 @@ export class Index extends React.Component {
             <InternTable searchText={this.state.searchText} />
           </ContentWithMargins>
         </Content>
-        <footer>…</footer>
+        <Footer />
       </Wrapper>
     );
   }

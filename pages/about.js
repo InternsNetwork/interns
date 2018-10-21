@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 import { Logo } from '../components/Logo';
+import { Footer } from '../components/Footer';
 
 const Wrapper = styled.div`
   display: flex;
@@ -106,7 +107,7 @@ export const About = props => {
           </p>
         </ContentWithMargins>
       </Content>
-      <footer>…</footer>
+      <Footer />
     </Wrapper>
   );
 };
