@@ -73,8 +73,17 @@ export class InternTable extends React.Component {
     if (!this.state.loaded) return <p>Loading...</p>;
     if (this.state.internships.length == 0) return <p>No entries!</p>;
 
+    let _internships = [...this.state.internships];
+    if (this.props.searchText !== '') {
+      _internships = _internships.filter(internship =>
+        internship.company
+          .toLowerCase()
+          .includes(this.props.searchText.toLowerCase()),
+      );
+    }
+
     const result = lodash.groupBy(
-      this.state.internships,
+      _internships,
       internship =>
         `${internship.company}//${internship.city}//${internship.country}`,
     );

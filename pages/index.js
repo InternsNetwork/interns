@@ -4,7 +4,6 @@ import React from 'react';
 import { COLORS } from '../util/colors';
 import { ChevronDown } from '../components/ChevronDown';
 import Triangle from '../components/Triangle';
-import { CompanyItemWrapper } from '../components/CompanyItemWrapper';
 import { InternTable } from '../components/InternTable';
 import { Logo } from '../components/Logo';
 
@@ -174,12 +173,12 @@ const DropdownItemWrapper = styled.div`
 export class Index extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { showPosition: false };
+    this.state = { searchText: '' };
   }
 
-  onShowHideInformationClick = () => {
+  handleChange = event => {
     this.setState({
-      showPosition: !this.state.showPosition,
+      searchText: event.target.value,
     });
   };
 
@@ -196,7 +195,11 @@ export class Index extends React.Component {
         <Content>
           <div>
             <SearchInputContainer>
-              <SearchInput placeholder="Company..." />
+              <SearchInput
+                placeholder="Company..."
+                value={this.state.value}
+                onChange={this.handleChange}
+              />
             </SearchInputContainer>
             <Divider />
           </div>
@@ -218,7 +221,7 @@ export class Index extends React.Component {
           </ContentWithMargins>
           <ContentWithMargins>
             <Divider color="rgb(0,23,31,0.1)" marginTop="0" />
-            <InternTable />
+            <InternTable searchText={this.state.searchText} />
           </ContentWithMargins>
           {/* <InternTable /> */}
         </Content>
