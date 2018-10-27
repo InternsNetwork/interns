@@ -1,92 +1,402 @@
 [
   {
+    "city": "London",
+    "company": "Palantir Technologies",
+    "country": "United Kingdom",
+    "department": "Engineering",
     "id": "wdawda",
     "title": "Software Engineering Intern",
-    "department": "Engineering",
-    "company": "Palantir Technologies",
-    "city": "London",
-    "country": "United Kingdom",
-    "url": "https://jobs.lever.co/palantir/95acc82e-fca3-43cd-81c7-15a15ba27a7a",
-    "updatedAt": "2018-10-21"
+    "updatedAt": "2018-10-21",
+    "url": "https://jobs.lever.co/palantir/95acc82e-fca3-43cd-81c7-15a15ba27a7a"
   },
   {
+    "city": "London",
+    "company": "Palantir Technologies",
+    "country": "United Kingdom",
+    "department": "Engineering",
     "id": "432544775432",
     "title": "Product Reliability Engineering Intern",
-    "department": "Engineering",
-    "company": "Palantir Technologies",
-    "city": "London",
-    "country": "United Kingdom",
-    "url": "https://jobs.lever.co/palantir/f7616e0a-25af-4089-a302-3a045334b21a",
-    "updatedAt": "2018-10-21"
+    "updatedAt": "2018-10-21",
+    "url": "https://jobs.lever.co/palantir/f7616e0a-25af-4089-a302-3a045334b21a"
   },
   {
+    "city": "London",
+    "company": "Palantir Technologies",
+    "country": "United Kingdom",
+    "department": "Engineering",
     "id": "43634745721",
     "title": "Forward Deployed Software Engineering Intern",
-    "department": "Engineering",
-    "company": "Palantir Technologies",
-    "city": "London",
-    "country": "United Kingdom",
-    "url": "https://jobs.lever.co/palantir/744dc41f-a280-4d7a-817c-11274c2910a1",
-    "updatedAt": "2018-10-21"
+    "updatedAt": "2018-10-21",
+    "url": "https://jobs.lever.co/palantir/744dc41f-a280-4d7a-817c-11274c2910a1"
   },
   {
+    "city": "London",
+    "company": "Palantir Technologies",
+    "country": "United Kingdom",
+    "department": "Engineering",
     "id": "87473467362",
     "title": "Privacy and Civil Liberties Software Engineering Intern",
-    "department": "Engineering",
-    "company": "Palantir Technologies",
-    "city": "London",
-    "country": "United Kingdom",
-    "url": "https://jobs.lever.co/palantir/5dd0125b-3eb1-4b3e-8386-fbab7dd5adfb",
-    "updatedAt": "2018-10-21"
+    "updatedAt": "2018-10-21",
+    "url": "https://jobs.lever.co/palantir/5dd0125b-3eb1-4b3e-8386-fbab7dd5adfb"
   },
   {
+    "city": "Budapest",
+    "company": "Skyscanner Ltd",
+    "country": "Hungary",
+    "department": "Engineering",
     "id": "1",
     "title": "Engineering Intern",
-    "department": "Engineering",
-    "company": "Skyscanner Ltd",
-    "city": "Budapest",
-    "country": "Hungary",
-    "url": "https://www.skyscanner.net/jobs/job/1382514/",
-    "updatedAt": "2018-10-21"
+    "updatedAt": "2018-10-21",
+    "url": "https://www.skyscanner.net/jobs/job/1382514/"
   },
   {
+    "city": "Sofia",
+    "company": "Skyscanner Ltd",
+    "country": "Bulgaria",
+    "department": "Engineering",
     "id": "2",
     "title": "Engineering Intern",
-    "department": "Engineering",
-    "company": "Skyscanner Ltd",
-    "city": "Sofia",
-    "country": "Bulgaria",
-    "url": "https://www.skyscanner.net/jobs/job/1382508/",
-    "updatedAt": "2018-10-21"
+    "updatedAt": "2018-10-21",
+    "url": "https://www.skyscanner.net/jobs/job/1382508/"
   },
   {
+    "city": "London",
+    "company": "Skyscanner Ltd",
+    "country": "United Kingdom",
+    "department": "Engineering",
     "id": "3",
     "title": "Engineering Intern",
-    "department": "Engineering",
-    "company": "Skyscanner Ltd",
-    "city": "London",
-    "country": "United Kingdom",
-    "url": "https://www.skyscanner.net/jobs/job/1320028/",
-    "updatedAt": "2018-10-21"
+    "updatedAt": "2018-10-21",
+    "url": "https://www.skyscanner.net/jobs/job/1320028/"
   },
   {
+    "city": "Edinburgh",
+    "company": "Skyscanner Ltd",
+    "country": "Scotland",
+    "department": "Engineering",
     "id": "4",
     "title": "Engineering Intern",
-    "department": "Engineering",
-    "company": "Skyscanner Ltd",
-    "city": "Edinburgh",
-    "country": "Scotland",
-    "url": "https://www.skyscanner.net/jobs/job/1320018/",
-    "updatedAt": "2018-10-21"
+    "updatedAt": "2018-10-21",
+    "url": "https://www.skyscanner.net/jobs/job/1320018/"
   },
   {
+    "city": "Barcelona",
+    "company": "Skyscanner Ltd",
+    "country": "Spain",
+    "department": "Engineering",
     "id": "5",
     "title": "Engineering Intern",
+    "updatedAt": "2018-10-21",
+    "url": "https://www.skyscanner.net/jobs/job/1320033/"
+  },
+  {
+    "city": "Lisbon",
+    "company": "Farfetch",
+    "country": "Portugal",
     "department": "Engineering",
-    "company": "Skyscanner Ltd",
+    "id": "6",
+    "title": "Mobile Engineer - iOS - Trainee",
+    "updatedAt": "2018-10-27",
+    "url": "http://jobs.jobvite.com/farfetch/job/oMZ57fwH"
+  },
+  {
+    "city": "Manchester",
+    "company": "The Hut Group",
+    "country": "United Kingdom",
+    "department": "Engineering",
+    "id": 7,
+    "title": "Software Engineering Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://thehutgroup.workable.com/jobs/824527"
+  },
+  {
+    "city": "Stockholm",
+    "company": "Spotify",
+    "country": "Sweden",
+    "department": "Engineering",
+    "id": 8,
+    "title": "Design & UX Summer Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://www.spotifyjobs.com/job/design-ux-summer-internship-sweden-odtx8fw5/"
+  },
+  {
+    "city": "Stockholm",
+    "company": "Spotify",
+    "country": "Sweden",
+    "department": "Engineering",
+    "id": 9,
+    "title": "Front End & Mobile Engineering Summer Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://www.spotifyjobs.com/job/front-end-mobile-engineering-summer-internship-sweden-omrx8fwc/"
+  },
+  {
+    "city": "Gothenburg",
+    "company": "Spotify",
+    "country": "Sweden",
+    "department": "Engineering",
+    "id": 10,
+    "title": "Front End & Mobile Engineering Summer Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://www.spotifyjobs.com/job/front-end-mobile-engineering-summer-internship-sweden-omrx8fwc/"
+  },
+  {
+    "city": "Gothenburg",
+    "company": "Spotify",
+    "country": "Sweden",
+    "department": "Business",
+    "id": 11,
+    "title": "Product Management and User Research Summer Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://www.spotifyjobs.com/job/product-mgmt-user-research-summer-internship-sweden-oisx8fwz/"
+  },
+  {
+    "city": "Stockholm",
+    "company": "Spotify",
+    "country": "Sweden",
+    "department": "Business",
+    "id": 12,
+    "title": "Product Management and User Research Summer Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://www.spotifyjobs.com/job/product-mgmt-user-research-summer-internship-sweden-oisx8fwz/"
+  },
+  {
+    "city": "Gothenburg",
+    "company": "Spotify",
+    "country": "Sweden",
+    "department": "Engineering",
+    "id": 14,
+    "title": "Software Engineering Summer Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://www.spotifyjobs.com/job/software-engineering-summer-internship-sweden-o4rx8fwu/"
+  },
+  {
+    "city": "Stockholm",
+    "company": "Spotify",
+    "country": "Sweden",
+    "department": "Engineering",
+    "id": 15,
+    "title": "Software Engineering Summer Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://www.spotifyjobs.com/job/software-engineering-summer-internship-sweden-o4rx8fwu/"
+  },
+  {
+    "city": "Gothenburg",
+    "company": "Spotify",
+    "country": "Sweden",
+    "department": "Engineering",
+    "id": 16,
+    "title": "Machine Learning and Data Summer Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://www.spotifyjobs.com/job/ml-data-summer-internship-sweden-oorx8fwe/"
+  },
+  {
+    "city": "Stockholm",
+    "company": "Spotify",
+    "country": "Sweden",
+    "department": "Engineering",
+    "id": 16,
+    "title": "Machine Learning and Data Summer Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://www.spotifyjobs.com/job/ml-data-summer-internship-sweden-oorx8fwe/"
+  },
+  {
     "city": "Barcelona",
+    "company": "King",
     "country": "Spain",
-    "url": "https://www.skyscanner.net/jobs/job/1320033/",
-    "updatedAt": "2018-10-21"
+    "department": "Engineering",
+    "id": 17,
+    "title": "Development Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/development-internship-1655?breadcrumbs=/jobs&location=barcelona"
+  },
+  {
+    "city": "Barcelona",
+    "company": "King",
+    "country": "Spain",
+    "department": "Design",
+    "id": 18,
+    "title": "Art Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/art-internship-1654?breadcrumbs=/jobs&location=barcelona"
+  },
+  {
+    "city": "Barcelona",
+    "company": "King",
+    "country": "Spain",
+    "department": "Engineering",
+    "id": 19,
+    "title": "Data Science Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/data-science-internship-1656?breadcrumbs=/jobs&location=barcelona"
+  },
+  {
+    "city": "Barcelona",
+    "company": "King",
+    "country": "Spain",
+    "department": "Engineering",
+    "id": 20,
+    "title": "Design Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/design-internship-1657?breadcrumbs=/jobs&location=barcelona"
+  },
+  {
+    "city": "Barcelona",
+    "company": "King",
+    "country": "Spain",
+    "department": "Marketing",
+    "id": 21,
+    "title": "Marketing Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/marketing-internship-1677?breadcrumbs=/jobs&location=barcelona"
+  },
+  {
+    "city": "Stockholm",
+    "company": "King",
+    "country": "Sweden",
+    "department": "Engineering",
+    "id": 22,
+    "title": "AI and Machine Learning Master Thesis Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/ai-machine-learning-internshipmaster-thesis-1675?breadcrumbs=/jobs&location=stockholm"
+  },
+  {
+    "city": "Stockholm",
+    "company": "King",
+    "country": "Sweden",
+    "department": "Engineering",
+    "id": 23,
+    "title": "Data Scientist Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/data-scientist-intern-1106?breadcrumbs=/jobs&location=stockholm"
+  },
+  {
+    "city": "Stockholm",
+    "company": "King",
+    "country": "Sweden",
+    "department": "Game Design",
+    "id": 24,
+    "title": "Game Design Research Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/game-design-research-intern-1665?breadcrumbs=/jobs&location=stockholm"
+  },
+  {
+    "city": "Stockholm",
+    "company": "King",
+    "country": "Sweden",
+    "department": "Game Design",
+    "id": 25,
+    "title": "Game Economy Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/game-economy-intern-1667?breadcrumbs=/jobs&location=stockholm"
+  },
+  {
+    "city": "Stockholm",
+    "company": "King",
+    "country": "Sweden",
+    "department": "Game Design",
+    "id": 26,
+    "title": "Gameplay Engineer Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/gameplay-engineer-intern-1686?breadcrumbs=/jobs&location=stockholm"
+  },
+  {
+    "city": "London",
+    "company": "King",
+    "country": "United Kingdom",
+    "department": "Design",
+    "id": 27,
+    "title": "Art Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/art-internship-1654?breadcrumbs=/jobs&location=london"
+  },
+  {
+    "city": "London",
+    "company": "King",
+    "country": "United Kingdom",
+    "department": "Engineering",
+    "id": 28,
+    "title": "Development Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/development-internship-1655?breadcrumbs=/jobs&location=london"
+  },
+  {
+    "city": "London",
+    "company": "King",
+    "country": "United Kingdom",
+    "department": "Engineering",
+    "id": 29,
+    "title": "Data Science Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/data-science-internship-1656?breadcrumbs=/jobs&location=london"
+  },
+  {
+    "city": "London",
+    "company": "King",
+    "country": "United Kingdom",
+    "department": "Design",
+    "id": 30,
+    "title": "Design Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/design-internship-1657?breadcrumbs=/jobs&location=london"
+  },
+  {
+    "city": "London",
+    "company": "King",
+    "country": "United Kingdom",
+    "department": "Marketing",
+    "id": 31,
+    "title": "Marketing Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/marketing-internship-1677?breadcrumbs=/jobs&location=london"
+  },
+  {
+    "city": "London",
+    "company": "King",
+    "country": "United Kingdom",
+    "department": "Human Resources Intern",
+    "id": 32,
+    "title": "Human Resources",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/human-resources-internship-1678?breadcrumbs=/jobs&location=london"
+  },
+  {
+    "city": "Berlin",
+    "company": "King",
+    "country": "Germany",
+    "department": "Art Intern",
+    "id": 33,
+    "title": "Design",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/art-internship-1654?breadcrumbs=/jobs&location=berlin"
+  },
+  {
+    "city": "Berlin",
+    "company": "King",
+    "country": "Germany",
+    "department": "Development Intern",
+    "id": 34,
+    "title": "Engineering",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/development-internship-1655?breadcrumbs=/jobs&location=berlin"
+  },
+  {
+    "city": "Berlin",
+    "company": "King",
+    "country": "Germany",
+    "department": "Design Intern",
+    "id": 35,
+    "title": "Design",
+    "updatedAt": "2018-10-27",
+    "url": "https://king.com/jobs/design-internship-1657?breadcrumbs=/jobs&location=berlin"
+  },
+  {
+    "city": "Düsseldorf",
+    "company": "trivago",
+    "country": "Germany",
+    "department": "Design",
+    "id": 36,
+    "title": "User Experience Research Intern",
+    "updatedAt": "2018-10-27",
+    "url": "https://company.trivago.com/jobs/r0000895/"
   }
 ]
