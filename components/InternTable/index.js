@@ -34,7 +34,7 @@ export class InternTable extends React.Component {
     }
 
     _internships = _internships.sort(
-      internship => new Date(internship.updatedAt),
+      (a, b) => new Date(b.updatedAt) - new Date(a.updatedAt),
     );
 
     const result = lodash.groupBy(
